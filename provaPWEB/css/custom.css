@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    background-color: #fff;
+}
+
+.max{
+    max-width: 1300px;
+    padding: 0 10px;
+    margin: auto;
+}
+
+.nav .logo a{
+    color: crimson;
+    font-size: 35px;
+    font-weight: 500;
+}
+
+.nav{
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    padding: 20px 0;
+    font-family: 'ubuntu', 'sans-serif';
+    background-color: #fff;
+    border-bottom: solid #fff 1px;
+}
+
+.nav .max{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav .menu li{
+    list-style: none;
+    display: inline-block
+}
+
+.nav .menu li a{
+    display: block;
+    color: #000;
+    font-size: 18px;
+    font-weight: 400;
+    margin-left: 25px;
+}
+
+.menu-btn{
+    color: #000;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+
+.top{
+    color: #fff;
+    display: flex;
+    background: url(../img/pipipi.png) no-repeat center;
+    height: 100vh;
+    min-height: 500px;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'ubuntu', 'sans-serif';
+}
+
+.top .max{
+    width: 100%;
+    display: flex;
+}
+
+.top .top-content .text-1{
+    font-size: 55px;
+    font-weight: 400;
+    margin-left: -3px;
+}
+
+.top .top-content .text-2{
+    font-size: 35px;
+}
+
+button{
+    color: #ffffff;
+    background: transparent;
+    border: 1px solid  #91786d;
+    margin-top: 20px;
+    padding: 12px 36px;
+    border-radius: 45px;
+    font-size: 25px;
+    font-weight: 300;
+    width: 220px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #d7317e;
+    color: white;
+    transition: 1s;
+}
+
+a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.serv{
+    color: #000;
+    font-family: 'ubuntu', 'sans-serif';
+}
+
+.serv .serv-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.serv .title{
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    font-weight: 400;
+    font-size: 50px;
+}
+
+.serv .serv-content .cards{
+    width: 60%;
+    height: 250px;
+    margin: 30px;
+    margin-top: 5px;
+    background: #f0cfcc;
+    text-align: center;
+    border-radius: 10px;
+    padding: 25px 25px;
+    overflow: hidden;
+    flex: 1;
+
+}
+
+.cards .box{
+    font-family: 'ubuntu', 'sans-serif';
+}
+
+.box .text{
+    font-size: 25px;
+    margin-bottom: 10px;
+    color: crimson;
+}
+
+.rodape{
+    width: 100%;
+    height: 2rem;
+    text-align: center;
+    font-size: 18px;
+    background-color: #acacac;
+}
+
+.serv .serv-content .card_e{
+    width: 60%;
+    height: 150px;
+    margin: 30px;
+    margin-top: 5px;
+    background: #f0cfcc;
+    text-align: center;
+    border-radius: 10px;
+    padding: 25px 25px;
+    overflow: hidden;
+    flex: 1;
+
+}
+
+.serv .serv-content .card_c{
+    width: 60%;
+    height: 200px;
+    margin: 30px;
+    margin-top: 5px;
+    background: #f0cfcc;
+    text-align: center;
+    border-radius: 10px;
+    padding: 25px 25px;
+    overflow: hidden;
+    flex: 1;
+
+}
+
+.serv a{
+    color: #000;
+}
+
+@media (max-width: 947px){
+    .menu-btn{
+        display: block;
+        z-index: 999;
+    }
+
+    .menu-btn i.active:before{
+        content: "\f00d";
+    }
+
+    .nav .menu{
+        background-color: #f0cfcc;
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.3s ease;
+    }
+
+    .nav .menu.active{
+        left: 0;
+    }
+
+    .nav .menu li{
+        display: block;
+    }
+
+    .nav .menu li a{
+        display: inline-block;
+        margin: 13px 0;
+        font-size: 25px;
+        color: #fff;
+    }
+
+    .max{
+        max-width: 930px;
+    }
+
+    .serv-content{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card{
+        align-items: center;
+        width: 60%;
+        height: 100%;
+        padding-bottom: 20px;
+    }
+}
